@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/palmframe/palm/provider"
+	"github.com/alexisbouchez/ai/provider"
 )
 
 type Handler func(ctx context.Context, args Args) (string, error)

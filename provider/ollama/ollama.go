@@ -8,8 +8,8 @@ import (
 	"net/url"
 	"time"
 
+	"github.com/alexisbouchez/ai/provider"
 	"github.com/ollama/ollama/api"
-	"github.com/palmframe/palm/provider"
 )
 
 const (

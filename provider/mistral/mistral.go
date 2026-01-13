@@ -10,7 +10,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/palmframe/palm/provider"
+	"github.com/alexisbouchez/ai/provider"
 )
 
 const (
@@ -265,11 +265,11 @@ type mistralUsage struct {
 }
 
 type mistralStreamChunk struct {
-	ID      string                 `json:"id"`
-	Object  string                 `json:"object"`
-	Created int64                  `json:"created"`
-	Model   string                 `json:"model"`
-	Choices []mistralStreamChoice  `json:"choices"`
+	ID      string                `json:"id"`
+	Object  string                `json:"object"`
+	Created int64                 `json:"created"`
+	Model   string                `json:"model"`
+	Choices []mistralStreamChoice `json:"choices"`
 }
 
 type mistralStreamChoice struct {
